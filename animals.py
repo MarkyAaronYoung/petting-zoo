@@ -1,12 +1,13 @@
 from datetime import date
 
 class Almond:
-    def __init__(self, name, type):
+    def __init__(self, name, species):
         self.name = name
         self.species = species
-        self.type = type
+
 
 myAlmond = Almond("Glorp", "Nut")
+print(myAlmond)
 
 class Llama:
     def __init__(self, name, species):
@@ -126,16 +127,3 @@ class Bass:
         self.species = species
         self.date_added = date.today()
         self.swimming = True
-
-    def __str__(self):
-        return f"My name is {self.name} and I am a {self.species}."
-
-
-def main():
-    myDuck = Duck("Doctor Poo", "Hate Duck")
-
-
-    print(myDuck)
-
-
-main()
