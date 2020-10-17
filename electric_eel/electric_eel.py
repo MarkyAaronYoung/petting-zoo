@@ -7,3 +7,9 @@ class Electric_Eel:
         self.date_added = date.today()
         self.swimming = False
         self.food = food
+
+    def feed(self):
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
