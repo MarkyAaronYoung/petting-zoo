@@ -13,3 +13,6 @@ class Snake_Pit:
         for animal in self.animals:
             print(
                 f'\t* {animal.name} the {animal.species}')
+    @property
+    def last_critter_added(self):
+        return f'\t* {self.animals[-1].name} the {self.animals[-1].species}'
